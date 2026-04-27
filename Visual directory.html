@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Leatherman — Visual Directory</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-top: 1.5rem;
+}
+
+.student-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+  text-decoration: none;
+  display: block;
+}
+.student-card:hover {
+  border-color: rgba(200,169,110,0.4);
+  transform: translateY(-4px);
+  opacity: 1;
+}
+.student-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+.student-name {
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="Visual directory.html" class="active">Visual Dir</a></li>
+    <li><a href="Floating_directory.html">Floating Dir</a></li>
+    <li><a href="Colors.html">Colors</a></li>
+    <li><a href="class_protocol_Leatherman.html">Protocol</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="Food.html">Food</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+  <span class="tag">CSC 2333 HY</span>
+  <h1>Visual Directory</h1>
+  <p>Photo grid of all classmates — click a photo to visit their site.</p>
+
+  <div class="visual-grid">
+    <a class="student-card fade-up" href="https://www.barsarslan.com/" target="_blank">
+      <img src="https://www.barsarslan.com/myphoto.jpg" alt="Dorahan Arslan" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Dorahan Arslan</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.imanibeharry.com/" target="_blank">
+      <img src="https://www.imanibeharry.com/myphoto.jpg" alt="Imani Beharry" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Imani Beharry</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.lburgee.com/" target="_blank">
+      <img src="https://www.lburgee.com/myphoto.jpg" alt="Lawrence Burgee" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Lawrence Burgee</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.jbutz.com/" target="_blank">
+      <img src="https://www.jbutz.com/myphoto.jpg" alt="Joshua Butzberger" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Joshua Butzberger</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.jceleste.com/" target="_blank">
+      <img src="https://www.jceleste.com/myphoto.jpg" alt="John Celeste" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">John Celeste</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.calvinhyrkas.com/" target="_blank">
+      <img src="https://www.calvinhyrkas.com/myphoto.jpg" alt="Calvin Hyrkas" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Calvin Hyrkas</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.aleatherman.com/" target="_blank">
+      <img src="https://ajisbeast.github.io/Adam-Leatherman-Website/myphoto.jpg" alt="Adam Leatherman" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Adam Leatherman</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.christianlindor.com/" target="_blank">
+      <img src="https://www.christianlindor.com/myphoto.jpg" alt="Christian Lindor" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Christian Lindor</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.cmacioce.com/" target="_blank">
+      <img src="https://www.cmacioce.com/myphoto.jpg" alt="Christopher Macioce" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Christopher Macioce</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.kyleokeefe.com/" target="_blank">
+      <img src="https://www.kyleokeefe.com/myphoto.jpg" alt="Kyle O'Keefe" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Kyle O'Keefe</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.jazmineolmos.com/" target="_blank">
+      <img src="https://www.jazmineolmos.com/myphoto.jpg" alt="Jazmine Olmos" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Jazmine Olmos</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.sshaler.com/" target="_blank">
+      <img src="https://www.sshaler.com/myphoto.jpg" alt="Scott Shaler" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Scott Shaler</div>
+    </a>
+    <a class="student-card fade-up" href="https://www.lukesstevens.com/" target="_blank">
+      <img src="https://www.lukesstevens.com/myphoto.jpg" alt="Luke Stevens" onerror="this.style.height='60px';this.style.background='var(--surface2)'">
+      <div class="student-name">Luke Stevens</div>
+    </a>
+  </div>
+</main>
+
+</body>
+</html>

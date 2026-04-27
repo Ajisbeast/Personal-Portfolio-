@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Leatherman — Colors</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.colors-section { margin-bottom: 3rem; }
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.color-swatch {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform 0.2s;
+}
+.color-swatch:hover { transform: scale(1.04); }
+
+.swatch-bar {
+  height: 60px;
+}
+
+.swatch-label {
+  background: var(--surface);
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.method-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--surface2);
+  color: var(--text-muted);
+  padding: 2px 7px;
+  border-radius: 10px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="Visual directory.html">Visual Dir</a></li>
+    <li><a href="Floating_directory.html">Floating Dir</a></li>
+    <li><a href="Colors.html" class="active">Colors</a></li>
+    <li><a href="class_protocol_Leatherman.html">Protocol</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="Food.html">Food</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+  <span class="tag">Reference</span>
+  <h1>Basic Colors</h1>
+  <p>The 16 standard HTML/CSS named colors demonstrated using both HTML attributes and CSS properties.</p>
+
+  <div class="colors-section">
+    <h2>HTML &amp; CSS Named Colors <span class="method-badge">both methods</span></h2>
+    <div class="color-grid">
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Aqua"></div><div class="swatch-label">Aqua</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Black"></div><div class="swatch-label">Black</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Blue"></div><div class="swatch-label">Blue</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Fuchsia"></div><div class="swatch-label">Fuchsia</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Gray"></div><div class="swatch-label">Gray</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Green"></div><div class="swatch-label">Green</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Lime"></div><div class="swatch-label">Lime</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Maroon"></div><div class="swatch-label">Maroon</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Navy"></div><div class="swatch-label">Navy</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Olive"></div><div class="swatch-label">Olive</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Purple"></div><div class="swatch-label">Purple</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Red"></div><div class="swatch-label">Red</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Silver"></div><div class="swatch-label">Silver</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Teal"></div><div class="swatch-label">Teal</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:White; border-bottom:1px solid #333"></div><div class="swatch-label">White</div></div>
+      <div class="color-swatch fade-up"><div class="swatch-bar" style="background:Yellow"></div><div class="swatch-label">Yellow</div></div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Leatherman — Directory</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.dir-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 1.5rem;
+}
+.dir-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 400;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+.dir-item:hover {
+  border-color: rgba(200,169,110,0.4);
+  color: var(--accent);
+  transform: translateX(4px);
+  opacity: 1;
+}
+.dir-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.75rem;
+  color: var(--accent);
+  opacity: 0.6;
+  min-width: 20px;
+  text-align: right;
+}
+.arrow { margin-left: auto; color: var(--text-muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html" class="active">Directory</a></li>
+    <li><a href="Visual directory.html">Visual Dir</a></li>
+    <li><a href="Floating_directory.html">Floating Dir</a></li>
+    <li><a href="Colors.html">Colors</a></li>
+    <li><a href="class_protocol_Leatherman.html">Protocol</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="Food.html">Food</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+  <span class="tag">CSC 2333 HY</span>
+  <h1>Class Directory</h1>
+  <p>Links to classmate websites for the Web Development course at Palm Beach Atlantic University.</p>
+
+  <div class="dir-list">
+    <a class="dir-item fade-up" href="https://www.barsarslan.com/" target="_blank">
+      <span class="dir-num">01</span>Dorahan Arslan<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.imanibeharry.com/" target="_blank">
+      <span class="dir-num">02</span>Imani Beharry<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.lburgee.com/" target="_blank">
+      <span class="dir-num">03</span>Lawrence Burgee<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.jbutz.com/" target="_blank">
+      <span class="dir-num">04</span>Joshua Butzberger<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.jceleste.com/" target="_blank">
+      <span class="dir-num">05</span>John Celeste<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.calvinhyrkas.com/" target="_blank">
+      <span class="dir-num">06</span>Calvin Hyrkas<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.aleatherman.com/" target="_blank">
+      <span class="dir-num">07</span>Adam Leatherman<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.christianlindor.com/" target="_blank">
+      <span class="dir-num">08</span>Christian Lindor<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.cmacioce.com/" target="_blank">
+      <span class="dir-num">09</span>Christopher Macioce<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.kyleokeefe.com/" target="_blank">
+      <span class="dir-num">10</span>Kyle O'Keefe<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.jazmineolmos.com/" target="_blank">
+      <span class="dir-num">11</span>Jazmine Olmos<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.sshaler.com/" target="_blank">
+      <span class="dir-num">12</span>Scott Shaler<span class="arrow">↗</span>
+    </a>
+    <a class="dir-item fade-up" href="https://www.lukesstevens.com/" target="_blank">
+      <span class="dir-num">13</span>Luke Stevens<span class="arrow">↗</span>
+    </a>
+  </div>
+</main>
+
+</body>
+</html>

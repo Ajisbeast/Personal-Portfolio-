@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Leatherman</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  padding-top: calc(var(--nav-h) + 80px);
+  padding-bottom: 64px;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  box-shadow: 0 0 40px rgba(200,169,110,0.12);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.hero-text { flex: 1; }
+
+.hero-text .tag { margin-bottom: 16px; }
+
+.hero-text h1 { margin-bottom: 6px; }
+
+.hero-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.hero-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 24px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #0f0f0f;
+}
+.btn-primary:hover { opacity: 0.85; }
+
+.btn-ghost {
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); opacity: 1; }
+
+/* Sections */
+.content-sections {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+}
+
+/* Food grid */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 1.5rem;
+}
+
+.food-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+.food-card:hover {
+  border-color: rgba(200,169,110,0.4);
+  transform: translateY(-3px);
+  opacity: 1;
+}
+.food-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+.food-label {
+  padding: 10px 12px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* Lists */
+ol, ul {
+  padding-left: 1.4rem;
+  color: var(--text-muted);
+}
+li { margin-bottom: 0.5rem; }
+li a { color: var(--accent); }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AL</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="Visual directory.html">Visual Dir</a></li>
+    <li><a href="Floating_directory.html">Floating Dir</a></li>
+    <li><a href="Colors.html">Colors</a></li>
+    <li><a href="class_protocol_Leatherman.html">Protocol</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="Food.html">Food</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <img class="hero-photo" src="myphoto_soft_10.jpg" alt="Adam Leatherman">
+  <div class="hero-text fade-up">
+    <span class="tag">Student Portfolio</span>
+    <h1>Adam Leatherman</h1>
+    <p class="hero-meta">CSC 2333 HY · Web Development &nbsp;·&nbsp; <i>Thursdays 12:30–1:45 PM</i></p>
+    <p>Welcome to my web development portfolio for Palm Beach Atlantic University. This site was built as part of CSC 2333 HY.</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="https://www.pba.edu/" target="_blank">PBA University</a>
+      <a class="btn btn-ghost" href="directory.html">Class Directory →</a>
+    </div>
+  </div>
+</div>
+
+<div class="content-sections">
+
+  <h2>Favorite Foods</h2>
+  <div class="food-grid">
+    <a class="food-card fade-up" href="Breakfest.png">
+      <img src="Breakfest.png" alt="Breakfast">
+      <div class="food-label">🍳 Breakfast — Eggs &amp; Bacon</div>
+    </a>
+    <a class="food-card fade-up" href="Lunch.png">
+      <img src="Lunch.png" alt="Lunch">
+      <div class="food-label">🥪 Lunch — Sandwich</div>
+    </a>
+    <a class="food-card fade-up" href="Dinner.png">
+      <img src="Dinner.png" alt="Dinner">
+      <div class="food-label">🍣 Dinner — Sushi</div>
+    </a>
+    <a class="food-card fade-up" href="Snack.png">
+      <img src="Snack.png" alt="Snack">
+      <div class="food-label">🍿 Snack</div>
+    </a>
+  </div>
+
+  <hr class="divider">
+
+  <div class="two-col">
+    <div>
+      <h2>Favorite Binge Watches</h2>
+      <ol class="fade-up">
+        <li>The Office</li>
+        <li>Solo Leveling</li>
+        <li>One Piece</li>
+      </ol>
+    </div>
+    <div>
+      <h2>Favorite States</h2>
+      <ul class="fade-up">
+        <li><a href="https://en.wikipedia.org/wiki/Florida" target="_blank">Florida</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Texas" target="_blank">Texas</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/North_Carolina" target="_blank">North Carolina</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

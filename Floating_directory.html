@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Leatherman — Floating Directory</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.title-overlay {
+  position: fixed;
+  top: calc(var(--nav-h) + 20px);
+  left: 40px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.title-overlay h1 {
+  font-size: 1.4rem;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.title-overlay p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+img.floater {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(200,169,110,0.3);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+img.floater:hover {
+  box-shadow: 0 4px 32px rgba(200,169,110,0.4);
+  border-color: var(--accent);
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="Visual directory.html">Visual Dir</a></li>
+    <li><a href="Floating_directory.html" class="active">Floating Dir</a></li>
+    <li><a href="Colors.html">Colors</a></li>
+    <li><a href="class_protocol_Leatherman.html">Protocol</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="Food.html">Food</a></li>
+  </ul>
+</nav>
+
+<div class="title-overlay">
+  <h1>Floating Directory</h1>
+  <p>Click a photo to visit their site</p>
+</div>
+
+<a href="https://www.barsarslan.com/" target="_blank"><img class="floater" src="https://www.barsarslan.com/myphoto.jpg" alt="Dorahan Arslan"></a>
+<a href="https://www.imanibeharry.com/" target="_blank"><img class="floater" src="https://www.imanibeharry.com/myphoto.jpg" alt="Imani Beharry"></a>
+<a href="https://www.lburgee.com/" target="_blank"><img class="floater" src="https://www.lburgee.com/myphoto.jpg" alt="Lawrence Burgee"></a>
+<a href="https://www.jbutz.com/" target="_blank"><img class="floater" src="https://www.jbutz.com/myphoto.jpg" alt="Joshua Butzberger"></a>
+<a href="https://www.jceleste.com/" target="_blank"><img class="floater" src="https://www.jceleste.com/myphoto.jpg" alt="John Celeste"></a>
+<a href="https://www.calvinhyrkas.com/" target="_blank"><img class="floater" src="https://www.calvinhyrkas.com/myphoto.jpg" alt="Calvin Hyrkas"></a>
+<a href="https://www.aleatherman.com/" target="_blank"><img class="floater" src="https://ajisbeast.github.io/Adam-Leatherman-Website/myphoto.jpg" alt="Adam Leatherman"></a>
+<a href="https://www.christianlindor.com/" target="_blank"><img class="floater" src="https://www.christianlindor.com/myphoto.jpg" alt="Christian Lindor"></a>
+<a href="https://www.cmacioce.com/" target="_blank"><img class="floater" src="https://www.cmacioce.com/myphoto.jpg" alt="Christopher Macioce"></a>
+<a href="https://www.kyleokeefe.com/" target="_blank"><img class="floater" src="https://www.kyleokeefe.com/myphoto.jpg" alt="Kyle O'Keefe"></a>
+<a href="https://www.jazmineolmos.com/" target="_blank"><img class="floater" src="https://www.jazmineolmos.com/myphoto.jpg" alt="Jazmine Olmos"></a>
+<a href="https://www.sshaler.com/" target="_blank"><img class="floater" src="https://www.sshaler.com/myphoto.jpg" alt="Scott Shaler"></a>
+<a href="https://www.lukesstevens.com/" target="_blank"><img class="floater" src="https://www.lukesstevens.com/myphoto.jpg" alt="Luke Stevens"></a>
+
+<script>
+const NAV_H = 64;
+const images = document.querySelectorAll("img.floater");
+const SIZE = 110;
+
+images.forEach(img => {
+  let x = Math.random() * (window.innerWidth - SIZE);
+  let y = NAV_H + Math.random() * (window.innerHeight - NAV_H - SIZE);
+  let dx = (Math.random() * 1.5 + 0.5) * (Math.random() < 0.5 ? 1 : -1);
+  let dy = (Math.random() * 1.5 + 0.5) * (Math.random() < 0.5 ? 1 : -1);
+
+  function move() {
+    x += dx; y += dy;
+    if (x <= 0 || x + SIZE >= window.innerWidth) dx *= -1;
+    if (y <= NAV_H || y + SIZE >= window.innerHeight) dy *= -1;
+    img.style.left = x + "px";
+    img.style.top  = y + "px";
+    requestAnimationFrame(move);
+  }
+  move();
+});
+</script>
+
+</body>
+</html>

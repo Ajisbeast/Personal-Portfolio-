@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adam Leatherman — Food</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+.food-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.food-card:hover {
+  border-color: rgba(200,169,110,0.4);
+  transform: translateY(-4px);
+}
+.food-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+.food-label {
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">AL</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="Visual directory.html">Visual Dir</a></li>
+    <li><a href="Floating_directory.html">Floating Dir</a></li>
+    <li><a href="Colors.html">Colors</a></li>
+    <li><a href="class_protocol_Leatherman.html">Protocol</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="Food.html" class="active">Food</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+  <span class="tag">Favorites</span>
+  <h1>Favorite Foods</h1>
+  <p>My go-to meals throughout the day.</p>
+
+  <div class="food-grid">
+    <div class="food-card fade-up">
+      <img src="Breakfest.png" alt="Breakfast">
+      <div class="food-label">🍳 Breakfast — Eggs &amp; Bacon</div>
+    </div>
+    <div class="food-card fade-up">
+      <img src="Lunch.png" alt="Lunch">
+      <div class="food-label">🥪 Lunch — Sandwich</div>
+    </div>
+    <div class="food-card fade-up">
+      <img src="Dinner.png" alt="Dinner">
+      <div class="food-label">🍣 Dinner — Sushi</div>
+    </div>
+    <div class="food-card fade-up">
+      <img src="Snack.png" alt="Snack">
+      <div class="food-label">🍿 Snack</div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
